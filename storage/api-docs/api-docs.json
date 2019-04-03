@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My First API",
+        "contact": {
+            "email": "darius@matulionis.lt"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "0.1"
+    },
+    "paths": {
+        "/blog/public/api/articles": {
+            "get": {
+                "operationId": "App\\Http\\Controllers\\API\\ArticleController::index",
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "App\\Http\\Controllers\\API\\ArticleController::show",
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                }
+            }
+        }
+    }
+}
